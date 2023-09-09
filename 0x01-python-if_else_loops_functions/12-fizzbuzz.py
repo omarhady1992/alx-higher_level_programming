@@ -16,6 +16,6 @@ def fizzbuzz():
         elif n % 5 == 0 and n % 3 == 0:
             print("FizzBuzz ", end="")
         elif n == 100:
-            print("{}".format(number), end="")
+            print("{}".format(n), end="")
         else:
-            print("{} ".format(number), end="")
+            print("{} ".format(n), end="")
