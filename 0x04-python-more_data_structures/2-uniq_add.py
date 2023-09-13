@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 
 
-def add_uniq(my_list=[]):
-    ''' Adds unique integers of a list'''
-
-    list_a = []
-    sums = 0
-    for i in my_list:
-        if i not in list_a:
-            sums += i
-            list_a.append(i)
-    return sums
+def uniq_add(my_list=[]):
+    """
+    A function that adds all unique
+    integers in a list (only once for each integer)
+    """
+    new_list = []
+    sum = 0
+    for num in my_list:
+        if num not in new_list:
+            sum += num
+            new_list.append(num)
+    return sum
